@@ -123,7 +123,7 @@ public class DemoAppConfig {
 
         // set the properties
         sessionFactory.setDataSource(securityDataSource());
-        sessionFactory.setPackagesToScan(env.getProperty("hiberanate.packagesToScan"));
+        sessionFactory.setPackagesToScan(env.getProperty("hibernate.packagesToScan"));
         sessionFactory.setHibernateProperties(getHibernateProperties());
 
         return sessionFactory;
